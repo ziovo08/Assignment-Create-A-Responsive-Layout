@@ -1,0 +1,28 @@
+.card {
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 5px;
+}
+
+/* mobile, mobile breakpoints */
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+    }
+}
+
+/* tablet, tablet breakpoints */ 
+@media (min-width: 768px) and (max-width: 1199px) {
+    .card-container { /* for the UL element in html i think... */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; /* spaces classes evenly */
+    }
+
+    .card {
+        width: calc(50% - 20px);
+        margin-bottom: 20px;
+    }
+}
