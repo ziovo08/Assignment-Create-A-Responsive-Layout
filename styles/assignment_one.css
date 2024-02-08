@@ -1,45 +1,72 @@
 .card {
-    margin: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0rem 0.125rem 1.5rem rgb(0, 0, 0 / 12%);
     background-color: white;
-    border-radius: 5px;
+    border-radius: 0.25rem;
+    flex: 1;
+    width: 24rem;
 }
+
 
 /* mobile, mobile breakpoints */
-@media (max-width: 768px) {
-    .card {
-        width: 100%;
-    }
-}
+/* Base styles for mobile devices */
+.card {
+    background-color: #fff;
+    border-radius: 0.25rem;
+    box-shadow: 0rem 0.125rem 1.5rem rgb(0 0 0 / 12%);
+    width: 100%; /* Full width on mobile */
+    margin-bottom: 1rem; /* Space between cards */
+  }
+  
+  img {
+    border-bottom: 0.25rem solid #fc0;
+    border-radius: 0.25rem 0.25rem 0 0;
+    height: auto;
+    width: 100%;
+  }
+  
+  .card-content {
+    padding: 1rem;
+  }
+  
 
+  
 /* tablet, tablet breakpoints */ 
-@media (min-width: 768px) and (max-width: 1199px) {
-    .card-container { /* for the UL element in html i think... */
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between; /* spaces classes evenly */
+@media screen and (min-width: 768px) {
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
     }
-
+  
     .card {
-        width: calc(50% - 20px);
-        margin-bottom: 20px;
+      flex-basis: calc(50% - 1rem); /* Half width, considering margin */
+      margin: 0.5rem; /* Spacing around cards */
     }
-}
+  
+    img {
+      min-height: 15.5rem;
+    }
+  }
 
-@media (min-width: 1200px) {
+
+
+/* desktop */
+@media screen and (min-width: 1200px) {
     .card-container {
         display: flex;
-        flex-wrap: wrap; 
-        justify-content: space-between; 
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 
+
+
         .card {
-            width: calc(33% - 20px);
-            margin-bottom: 20px;
+           flex-basis: calc(33.333% - 20px);
+           margin: 0.5rem;
         }
+    
+
+    img {
+        min-height: 16.375rem;
     }
-            
-        
-    
-    
+}
