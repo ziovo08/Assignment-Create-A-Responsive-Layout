@@ -1,4 +1,27 @@
-iframe {
-    width: 100%;
-    height: auto;
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 48px 15px;
+    margin: 1.525rem;
+ 
 }
+ 
+iframe{
+    flex: 1;
+    margin-top: 6rem;
+    margin-top: 5px
+}
+@media screen and (min-width: 768px) {
+    iframe{
+        height: 35rem;
+        max-width: 97%
+    }
+}
+@media screen and (min-width:1500px) {
+    iframe{
+        height: 40rem;
+        max-width: 80%
+    }
+} 
