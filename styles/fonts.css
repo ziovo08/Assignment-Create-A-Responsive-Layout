@@ -1,7 +1,7 @@
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Courier New", monospace;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.1;
 }
 
@@ -28,13 +28,13 @@ h2 {
 
 h3 {
   font-size: 1.25rem;
-  font-weight: 200;
+  font-weight: 600;
   text-transform: uppercase;
 }
 
 h4, h5, h6 {
   font-size: 1.25rem;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 p {
