@@ -1,17 +1,16 @@
-console.log("Starting server...");
+console.log("AHHHHH...");
 
 
 
 const express = require('express');
 const SpotifyWebApi = require('spotify-web-api-node');
-const cors = require('cors');
 const app = express();
 const port = 3000;
 
 
 
+app.use(express.static('public'));
 
-app.use(cors());
 
 // Spotify API setup
 const spotifyApi = new SpotifyWebApi({
@@ -20,6 +19,7 @@ const spotifyApi = new SpotifyWebApi({
 });
 
 app.get('/request-token', async (req, res) => {
+  console.log("HELP ME");
   try {
     const data = await spotifyApi.clientCredentialsGrant();
     spotifyApi.setAccessToken(data.body['access_token']);
